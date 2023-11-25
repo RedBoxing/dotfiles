@@ -1,0 +1,5 @@
+[default]
+path = "~/dotfiles/backgrounds/"
+duration = "5m"
+apply-shadow = true
+sorting = "ascending"
