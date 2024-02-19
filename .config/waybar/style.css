@@ -7,12 +7,14 @@
 
 #waybar {
   /* Transparent waybar. Make sure to comment out background-color: and border: */
-  background: rgba(0,0,0,0.3);
-  border-radius: 10px;
+  /* background: rgb(30, 30, 46); */
+  background: rgba(0, 0, 0, 0);
+  /*border-radius: 5px;*/
   /* background-color: #1e1e2e; */
   /* border: 2px solid #313244; */
   transition-property: background-color;
   transition-duration: .5s;
+
 }
 
 tooltip {
@@ -51,21 +53,27 @@ window#waybar.empty {
 #window,
 #custom-menu,
 #custom-notification,
+#custom-spotify,
 #workspaces,
 #network {
-	border-radius: 8px;
+	/*border-radius: 8px;
 	border: 2px solid #89dceb;
 	margin: 6px 0px;
-	padding: 0px 15px;
-  background: rgba(0,0,0,0.5);
+	padding: 0px 15px;*/
+  margin-left: 3px;
+  margin-right: 3px;
+  background: rgba(30,30,46,1);
+  border-radius: 5px;
+  padding: 0px 10px;
   color: #F9E2AF;
-  /*border: 2px solid #3a3b3c; */
-	/*animation: rgb 1s linear infinite alternate;*/
+  /*border: 2px solid #3a3b3c; 
+	animation: rgb 1s linear infinite alternate;*/
 }
 
 #workspaces {
-	margin: 6px 0px;
-	padding: 0px 8px;
+/*	margin: 6px 0px;
+	padding: 0px 8px;*/
+  padding: 0;
   color: #F9E2AF;
 }
 
@@ -125,7 +133,7 @@ window#waybar.empty {
 }
 
 #tray {
-	background-color: rgba(0,0,0,0.5);
+	/*background-color: rgba(0,0,0,0.5); */
 	color: #89dceb;
 }
 #tray > .passive {
@@ -136,10 +144,10 @@ window#waybar.empty {
 }
 
 #workspaces button {
-  background: rgba(0,0,0,0.0);
+  /* background: rgba(0,0,0,0.0); */
   color: #d9e0ee;
   /* border: 2px solid #3a3b3c; */
-  margin-right: 2px;
+  /*margin-right: 2px; */
 }
 
 #workspaces button.active {
@@ -148,6 +156,7 @@ window#waybar.empty {
 
 #custom-menu {
   margin-left: 6px;
+  padding-right: 15px;
 	color: #f38ba8;
 }
 
@@ -160,16 +169,18 @@ window#waybar.empty {
     color: #89dceb;
 }
 
+
 #custom-spotify {
-    padding: 0px 10px 0px;
+    /*padding: 0px 10px 0px;
     margin: 6px 4px;
-    border-radius: 8px;
+    border-radius: 8px;*/
     background-color: #6BD999;
     color: black;
 }
 
 #custom-notification {
   font-family: "NotoSansMono Nerd Font";
+  margin-right: 10px;
 }
 
 #pulseaudio {
@@ -185,9 +196,9 @@ window#waybar.empty {
 }
 
 #network {
+  margin-right: 6px;
 	color: #89b4fa;
 }
 #network.disconnected,#network.disabled {
-	
 	color: #cdd6f4;
 }
