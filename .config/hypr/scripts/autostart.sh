@@ -5,7 +5,7 @@ HOSTNAME=$(hostname)
 hyprpm reload -n &
 swaync &
 
-/usr/lib/polkit-gnome-authentication-agent-1 &
+/usr/lib/polkit-kde-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 fcitx5 &
 
@@ -17,9 +17,11 @@ waybar &
 wpaperd &
 nm-applet &
 
-brave & 
+firefox & 
 vesktop & 
-spotify_player -d & 
+#spotify_player -d & 
+spotifyd &
+udiskie &
 
 if [[ $HOSTNAME = "laptop-redboxing" ]]; then
   clight &

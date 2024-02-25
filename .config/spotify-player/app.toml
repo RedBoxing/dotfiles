@@ -1,0 +1,38 @@
+theme = "Catppuccin-mocha"
+client_id = "36d1a4d690ea4d29a5b66815a1fa9dc2"
+client_port = 8267
+playback_format = """
+{track} • {artists}
+{album}
+{metadata}"""
+tracks_playback_limit = 50
+app_refresh_duration_in_ms = 64
+playback_refresh_duration_in_ms = 0
+page_size_in_rows = 20
+play_icon = "▶"
+pause_icon = "▌▌"
+liked_icon = "♥"
+border_type = "Plain"
+progress_bar_type = "Rectangle"
+playback_window_position = "Top"
+playback_window_width = 6
+enable_media_control = true
+enable_streaming = "DaemonOnly"
+enable_cover_image_cache = true
+default_device = "spotify-player"
+notify_streaming_only = true
+
+[copy_command]
+command = "xclip"
+args = [
+    "-sel",
+    "c",
+]
+
+[device]
+name = "spotify-player"
+device_type = "speaker"
+volume = 100
+bitrate = 320
+audio_cache = true
+normalization = false
