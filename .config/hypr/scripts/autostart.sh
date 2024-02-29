@@ -19,8 +19,9 @@ nm-applet &
 
 firefox & 
 vesktop & 
+element-desktop &
 #spotify_player -d & 
-spotifyd &
+#spotifyd &
 udiskie &
 
 if [[ $HOSTNAME = "laptop-redboxing" ]]; then
@@ -31,6 +32,7 @@ if [[ $HOSTNAME = "laptop-redboxing" ]]; then
 
   linux-wallpaperengine --screen-root eDP-1 --scaling fill 875617215 & 
 elif [[ $HOSTNAME = "pc-thomas" ]]; then
+  spotify-launcher &
   linux-wallpaperengine --screen-root DP-2 --no-audio-processing --fps 60 --disable-mouse --scaling fill 875617215 &
 fi
 
