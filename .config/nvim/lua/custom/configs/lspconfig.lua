@@ -1,4 +1,5 @@
 local lspconfig = require('lspconfig')
+local servers = {'tsserver', 'eslint'}
 
 lspconfig.intelephense.setup({
   settings = {
@@ -28,3 +29,7 @@ lspconfig.intelephense.setup({
     };
   }
 });
+
+for _, lsp in pairs(servers) do
+  lspconfig[lsp].setup({})
+end
