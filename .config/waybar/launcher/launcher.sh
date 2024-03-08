@@ -16,4 +16,4 @@ theme='type-1/style-5'
 rofi \
     -show drun \
     -theme ${dir}/${theme}.rasi \
-    -dpi 200
+#    -dpi 200
